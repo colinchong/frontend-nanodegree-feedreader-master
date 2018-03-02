@@ -23,8 +23,7 @@ $(function() {
         */
         it('have URLs defined', function() {
             allFeeds.forEach(function(feed) {
-                expect(feed.url).toBeDefined();
-                expect(feed.url).not.toBe('');
+                expect(feed.url).toBeTruthy();
             });
         });
 
@@ -33,8 +32,7 @@ $(function() {
         */
         it('have names defined', function() {
             allFeeds.forEach(function(feed) {
-                expect(feed.name).toBeDefined();
-                expect(feed.name).not.toBe('');
+                expect(feed.name).toBeTruthy();
             });
         });
     });
