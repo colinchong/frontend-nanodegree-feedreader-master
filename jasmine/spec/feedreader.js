@@ -70,7 +70,7 @@ $(function() {
         });
 
         it('have at least one entry', function() {
-            expect($('.entry').length).toBeGreaterThan(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
     // Test suite for initial entries
